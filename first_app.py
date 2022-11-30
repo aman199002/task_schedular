@@ -12,7 +12,7 @@ def start_serve_a_coffee():
     the delay method doesn't wait the task execution be finished.
     """
     serve_a_coffee.apply_async(('express', 'small'))
-    print('This will be executed before the serve_a_beer task be finished')
+    print('This will be executed before the serve_a_coffee task be finished')
 
 def start_serve_a_wine():
     sync_task.apply_async()
